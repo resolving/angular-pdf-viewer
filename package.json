@@ -1,11 +1,31 @@
 {
-  "name": "angular-pdf-viewer",
-  "version": "0.2.13",
-  "author": "Varun Vachhar",
+  "name": "@cpcwood/angular-pdf-viewer",
+  "version": "0.0.1",
   "description": "An AngularJS directive to display PDFs",
+  "author": "Varun Vachhar",
+  "contributors": [
+    {
+      "name" : "Chris Wood",
+      "email" : "contact@cpcwood.com",
+      "url" : "https://github.com/cpcwood"
+    }
+  ],
+  "license" : "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/winkerVSbecks/angular-pdf-viewer.git"
+    "url": "https://github.com/resolving/angular-pdf-viewer.git"
+  },
+  "main": "./dist/angular-pdf-viewer.min.js",
+  "files": [
+    "./dist/angular-pdf-viewer.min.js",
+    "package.json",
+    "readme.md",
+    "LICENSE"
+  ],
+  "browser": true,
+  "peerDependencies": {
+    "angular": "^1.3.0",
+    "pdfjs-dist": "^1.7.351"
   },
   "devDependencies": {
     "gulp": "^3.8.7",
