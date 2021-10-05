@@ -1,6 +1,6 @@
 ## Angular PDF Viewer
 
-[![npm-version](https://img.shields.io/npm/v/@cpcwood/angular-pdf-viewer.svg?color=blueviolet&style=flat-square)](https://www.npmjs.com/package/@cpcwood/angular-pdf-viewer)
+[![npm-version](https://img.shields.io/npm/v/@resolving/angular-pdf-viewer.svg?color=blueviolet&style=flat-square)](https://www.npmjs.com/package/@resolving/angular-pdf-viewer)
 
 Fork of https://github.com/winkerVSbecks/angular-pdf-viewer, npm package for webpack.
 
@@ -14,13 +14,13 @@ An AngularJS directive to display PDFs. [DEMO](http://codepen.io/winkerVSbecks/f
 ## Usage
 
 1. Add as dependency
-   - `npm install @cpcwood/angular-pdf-viewer` 
-   - `yarn add @cpcwood/angular-pdf-viewer` 
+   - `npm install @resolving/angular-pdf-viewer` 
+   - `yarn add @resolving/angular-pdf-viewer` 
 2. Ensure AngularJS peer dependency is met
 3. Import in client
 
 ```js
-import '@cpcwood/angular-pdf-viewer'
+import '@resolving/angular-pdf-viewer'
 ```
 
 3. Include the lib as a dependency in your angular app:
