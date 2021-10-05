@@ -1,3 +1,5 @@
+import delegateService from './delegate-service.js';
+
 angular.module('pdf', [])
   .service('pdfDelegate', delegateService([
     'prev',

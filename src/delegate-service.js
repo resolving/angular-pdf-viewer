@@ -117,3 +117,4 @@ function delegateService(methodNames) {
     });
   }];
 }
+export default delegateService

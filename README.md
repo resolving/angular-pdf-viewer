@@ -7,25 +7,24 @@ An AngularJS directive to display PDFs. [DEMO](http://codepen.io/winkerVSbecks/f
 ## Dependencies
 
 1. [AngularJS](http://angularjs.org/)
-1. [PDFJS](http://mozilla.github.io/pdf.js/)
 
 
 ## Usage
 
-1. `bower install angular-pdf-viewer`
+1. Add as dependency
+   - `npm install @cpcwood/angular-pdf-viewer` 
+   - `yarn add @cpcwood/angular-pdf-viewer` 
+2. Ensure AngularJS peer dependency is met
+3. Import in client
 
-2. Include the path to the lib, AngularJS and PDFJS:
-
-```
-<script src="bower_components/pdfjs-dist/build/pdf.js"></script>
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-pdf-viewer/dist/angular-pdf-viewer.min.js"></script>
+```js
+import '@cpcwood/angular-pdf-viewer'
 ```
 
 3. Include the lib as a dependency in your angular app:
 
-``` js
-var app = angular.module('App', ['pdf']);
+```js
+var app = angular.module('app', ['pdf']);
 ```
 
 
@@ -33,7 +32,7 @@ var app = angular.module('App', ['pdf']);
 
 The URL, request headers, scale and delegate-handle can be set using the attributes:
 
-``` html
+```html
 <pdf-viewer
     delegate-handle="my-pdf-container"
     url="pdfUrl"
@@ -49,7 +48,7 @@ The pdfDelegate service allows you to access and control individual instances of
 
 Inject the `pdfDelegate` service into your controller. You can then fetch an instance using it's delegate handle and call methods on it:
 
-``` js
+```js
 pdfDelegate.$getByHandle('my-pdf-container').zoomIn();
 ```
 
@@ -70,19 +69,22 @@ The following methods are available to the delegate:
 
 In order to replace the active PDF with another one, you can call the `load` method of the delegate. For example:
 
-``` js
+```js
 pdfDelegate
     .$getByHandle('my-pdf-container')
     .load('url-of-the-new-file.pdf');
 ```
 
 
-## Example
+## Development & Example
 
-Run `npm install && bower install` to install all dependencies. And then `gulp dev` to start a local server. The example will now be available at [localhost:3000/src](http://localhost:3000/src)
+- Install: `yarn install`
+- Start development server: `yarn start`
+- Visit app: `http://localhost:8080`
 
 
 ## Toolbar
+
 The default toolbar can be shown or hidden using the `show-toolbar` attribute. Since the PDF can be easily controlled using the delegate service it's quite trivial to build a custom toolbar. Or place the toolbar on a separate scope.
 
 

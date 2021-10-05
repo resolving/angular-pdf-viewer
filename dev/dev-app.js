@@ -1,3 +1,5 @@
+import 'angular';
+
 angular.module('testApp', ['pdf'])
   .controller('AppCtrl', [
     '$scope',
@@ -12,3 +14,5 @@ angular.module('testApp', ['pdf'])
         .load(url);
     };
 }]);
+
+require('../index.js')
