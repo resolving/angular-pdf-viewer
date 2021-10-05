@@ -1,6 +1,8 @@
 ## Angular PDF Viewer
 
-Fork of https://github.com/winkerVSbecks/angular-pdf-viewer for npm install into legacy project.
+[![npm-version](https://img.shields.io/npm/v/@cpcwood/angular-pdf-viewer.svg?color=blueviolet&style=flat-square)](https://www.npmjs.com/package/@cpcwood/angular-pdf-viewer)
+
+Fork of https://github.com/winkerVSbecks/angular-pdf-viewer, npm package for webpack.
 
 An AngularJS directive to display PDFs. [DEMO](http://codepen.io/winkerVSbecks/full/50010e383d0f80deab97858571400d86/)
 

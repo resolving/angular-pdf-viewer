@@ -1,6 +1,6 @@
 {
   "name": "@cpcwood/angular-pdf-viewer",
-  "version": "0.0.4",
+  "version": "0.2.9",
   "description": "An AngularJS directive to display PDFs",
   "author": "Varun Vachhar",
   "contributors": [
